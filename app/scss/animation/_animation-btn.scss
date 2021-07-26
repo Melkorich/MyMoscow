@@ -1,0 +1,8 @@
+.animation-btn {
+  transition: background-color 0.5s, color 0.5s;
+
+  &:hover {
+    background-color: #ffc154;
+    color: #709DCA;
+  }
+}
