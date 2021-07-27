@@ -1,11 +1,42 @@
- @import 'vars';
- @import 'fonts';
- @import 'reset';
- @import 'global';
+@mixin flexb() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+@mixin flexc() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+@mixin line-climp($row) {
+  -webkit-line-clamp: $row; 
+  display: -webkit-box; 
+  -webkit-box-orient: vertical;
+  overflow: hidden; 
+} 
 
+@mixin maxw($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
 
-
-
- @import 'media';
+@mixin minw($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+  
+@mixin maxh($width) {
+  @media (max-height: $width) {
+    @content;
+  }
+}
+  
+@mixin minh($width) {
+  @media (min-height: $width) {
+    @content;
+  }
+} 
