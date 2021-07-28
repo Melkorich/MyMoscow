@@ -6,9 +6,13 @@
 @import 'global';
 @import 'media'; 
 
-
+/*global*/
 @import "components/header";
 @import "components/footer";
+
+/*index page*/
+@import "index/offer";
+@import "index/about";
 
 /*animations*/
 @import "animation/animation-links";
