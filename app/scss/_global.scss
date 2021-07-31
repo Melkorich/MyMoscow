@@ -7,6 +7,10 @@ body {
   line-height: 1.1;
   background-color: #fff;
   color: #fff;
+
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 .main {
@@ -25,8 +29,7 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-
+  
 .container {
   max-width: 1230px;
   padding: 0 15px;
@@ -43,21 +46,48 @@ body {
     object-fit: contain;
   }
 }
-
+ 
 .title {
+  position: relative;
+  padding: 0 0 15px 0;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
   font-weight: 400;
   color: #709DCA;
-  margin-bottom: 10px;
   text-transform: uppercase;
-}
+  @include line-climp(3);
 
+  @media (max-width: 768px) {
+    font-size: 26px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 220px;
+    height: 1px;
+    background-color: $orange;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+ 
 .subtitle {
   font-size: 24px;
   line-height: 1.2;
   font-weight: 400;
   text-align: center;
   color: #394B50;
+  @include line-climp(3);
+
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 }
+
