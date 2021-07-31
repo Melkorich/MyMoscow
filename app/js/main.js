@@ -1,12 +1,12 @@
-
 $(function(){
 
-  // $("a[href^='#']").click(function(){
-  //   var _href = $(this).attr("href");
-  //   $("html, body").animate({scrollTop: $(_href).offset().top+"px"}, 2000);
-  //   return false;
-  // });
-
+  $("a[href^='#']").click(function(){
+    let target = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(target).offset().top-108
+      }, 500);
+  });
+ 
 
   $('.header__burger, menu').on('click', function() {
     $('.menu__list').toggleClass('menu__list--active');
@@ -38,11 +38,6 @@ $(function(){
       }
       
     }]
-  });
-
-  $('.reviews__slider').on('swipe', function(event, slick, direction){
-    console.log(bottom);
-    // left
   });
 
   $(window).scroll(function(){
