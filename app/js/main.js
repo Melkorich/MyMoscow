@@ -1,6 +1,13 @@
 
 $(function(){
 
+  // $("a[href^='#']").click(function(){
+  //   var _href = $(this).attr("href");
+  //   $("html, body").animate({scrollTop: $(_href).offset().top+"px"}, 2000);
+  //   return false;
+  // });
+
+
   $('.header__burger, menu').on('click', function() {
     $('.menu__list').toggleClass('menu__list--active');
     $('.header__burger').toggleClass('header__burger--active');
