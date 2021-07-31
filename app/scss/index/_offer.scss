@@ -50,7 +50,7 @@
   &__item:first-child {
 
     &::before {
-      background-image: url('../../images/offer/1.png');
+      background-image: url('../images/offer/1.png');
       background-repeat: no-repeat;
     }
   }
@@ -58,7 +58,7 @@
   &__item:nth-child(2) {
     
     &::before {
-      background-image: url('../../images/offer/2.png');
+      background-image: url('../images/offer/2.png');
       background-repeat: no-repeat;
     }
   }
@@ -66,7 +66,7 @@
   &__item:nth-child(3) {
     
     &::before {
-      background-image: url('../../images/offer/3.png');
+      background-image: url('../images/offer/3.png');
       background-repeat: no-repeat;
       left: 8px;
     }
@@ -75,7 +75,7 @@
   &__item:nth-child(4) {
    
     &::before {
-      background-image: url('../../images/offer/4.png');
+      background-image: url('../images/offer/4.png');
       background-repeat: no-repeat;
     }
   }
@@ -83,7 +83,7 @@
   &__item:nth-child(5) {
     
     &::before {
-      background-image: url('../../images/offer/5.png');
+      background-image: url('../images/offer/5.png');
       background-repeat: no-repeat;
     }
   }
@@ -91,7 +91,7 @@
   &__item:last-child {
     
     &::before {
-      background-image: url('../../images/offer/6.png');
+      background-image: url('../images/offer/6.png');
       background-repeat: no-repeat;
       left: 8px;
     }

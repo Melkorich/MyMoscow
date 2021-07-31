@@ -132,19 +132,19 @@
 
   .footer__list-link--map{
     &::before {
-      background-image:url('../../images/icons/map-icon.svg');
+      background-image:url('../images/icons/map-icon.svg');
     }
   }
 
   .footer__list-link--mail {
     &::before {
-      background-image:url('../../images/icons/mail-icon.svg');
+      background-image:url('../images/icons/mail-icon.svg');
     }
   }
 
   .footer__list-link--tel {
     &::before {
-      background-image:url('../../images/icons/tel-icon.svg');
+      background-image:url('../images/icons/tel-icon.svg');
     }
   }
 }
