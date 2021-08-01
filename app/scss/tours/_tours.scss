@@ -1,0 +1,214 @@
+.header {
+  &__content {
+    padding: 220px 0 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 557px
+  }
+
+  &__content-inner {
+    @include flexc;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 59px;
+    line-height: 1.2;
+    margin-bottom: 5px;
+
+    @include maxw($md) {
+      font-size: 40px;
+    }
+
+    span {
+      display: block;
+      font-size: 34px;
+      font-weight: 300;
+      letter-spacing: 7px;
+      line-height: 1.5;
+  
+      @include maxw($md) {
+        font-size: 20px;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: bold;
+
+    @include maxw($md) {
+      font-size: 20px;
+    }
+  }
+}
+
+.tours {
+  padding: 60px 0 120px;
+
+  &__inner {
+    background-color: $orange;
+    display: flex;
+
+    @include maxw($lg) {
+     flex-direction: column;
+    }
+  }
+
+  &__image {
+    flex: 0 1 50%;
+    position: relative;
+    // height: 622px;
+
+    @include maxw($lg) {
+      flex: 0 1 300px;
+    }
+
+    &:nth-child(even) {
+      @include maxw($lg) {
+        order: -1;
+      }
+    }
+ 
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+ 
+  &__content {
+    padding: 90px 15px 75px 35px;
+    flex: 1 0 50%;
+
+    @include maxw($xl) {
+      padding: 20px 10px 15px 20px;
+    }
+
+    @include maxw($md) {
+      padding: 15px 10px 10px 10px;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 60px;
+    padding: 0;
+
+    &::after {
+      display: none;
+    }
+
+    @include maxw($xl) {
+      margin-bottom: 30px;
+    }
+
+    @include maxw($md) {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    line-height: 1.15;
+
+    @include maxw($md) {
+      font-size: 16px;
+    }
+
+    p {
+      margin-bottom: 25px;
+      // @include line-climp(8);
+
+      @include maxw($md) {
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  &__price {
+    display: block;
+    font-size: 30px;
+    margin: 0 0 25px 0;
+  }
+
+  &__link {
+    display: inline-block;
+    padding: 13px 9px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #e79f21;
+    border: 1px solid #FFA300;
+    border-radius: 5px;
+    text-transform: uppercase;
+
+    @include maxw($xs) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.popup {
+  position: fixed;
+  width: 40%;
+  height: 400px;
+  background-color: rgba(#273943, 0.8);
+  left: 50%;
+  margin-left: -20%;
+  top: 50%;
+  margin-top: -200px;
+  text-align: center;
+  display: none;
+  margin-top: -200px;
+  z-index: 7;
+  padding: 25px;
+ 
+  &__close {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    margin: 0 0 50px 0;
+  }
+ 
+  &__label {
+    margin: 0 0 30px 0;
+  }
+
+  &__input {
+    padding: 12px;
+    border: 3px solid #FFC155;
+    outline: none;
+
+    &::placeholder {
+      font-size: 20px;
+    }
+  }
+
+  &__btn {
+    padding: 7px 10px;
+    font-size: 18px;
+    border: 3px solid #FFC155;
+    outline: none;
+  }
+} 

@@ -27,9 +27,13 @@
       width: 180px;
       height: 45px;
     }
+
+    @include maxw($xs) {
+      width: 150px;
+    }
   }
 }
-
+ 
 .header--scroll {
   background-color: #36242f;
 }
@@ -185,7 +189,7 @@
       }
     }
   }
-
+ 
   &__subtitle {
     font-size: 30px;
     line-height: 1.2;
@@ -196,10 +200,9 @@
       font-size: 20px;
     }
   }
-
+ 
   &__link {
     font-size: 14px;
-    line-height: 1;
     text-align: center;
     padding: 18px 39px;
     background-color: $blue;

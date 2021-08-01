@@ -1,5 +1,15 @@
 $(function(){
 
+  $('.modal-btn').click(function() {
+    $('.popup').fadeIn();
+    $('.popup-overlay').fadeIn();
+  });
+
+  $('.popup__close').click(function() {
+    $('.popup').fadeOut();
+    $('.popup-overlay').fadeOut();
+  });
+
   $("a[href^='#']").click(function(){
     let target = $(this).attr("href");
     $("html, body").animate({
@@ -33,7 +43,6 @@ $(function(){
       breakpoint: 768,
       settings: {
         slidesToShow: 1,
-        // vertical: true,
         swipe: true,
       }
       
@@ -48,6 +57,8 @@ $(function(){
     }
   });
 
-  
+  new WOW().init();
+
+   
 });
 

@@ -1,39 +1,35 @@
 .animation-btn {
-  transition: background-color 0.6s, color 0.6s, opacity 0.3s border 0.5s;
+  transition: background-color 0.3s, background-image 0.3s, color 0.3s, opacity 0.3s, border 0.3s;
   border: 1px solid transparent;
 
   &:focus {
     border: 1px solid $blue;
-    background-color: $orange;
+    background-color: rgb(255,193,84);
   }
 
   &:hover {
-    background-color: $orange;
-    color: $blue;
+    background-color: rgb(214, 161, 69);
   }
 
   &:active {
-    opacity: 0.5;
-    color: #fff;
+    opacity: 0.7;
   }
 }
-
+ 
 .animation-btn__reverse {
-  transition: background-color 0.6s, color 0.6s, opacity 0.3s border 0.5s;
+  transition: background-color 0.3s, color 0.3s, opacity 0.3s, border 0.3s;
   border: 1px solid transparent;
 
   &:focus {
-    border: 1px solid #FFA300;
-    background-color: $orange;
+    border: 1px solid rgb(15, 91, 126);;
   }
 
   &:hover {
-    background-color: $blue;
-    color: $orange;
+    background: rgb(84, 147, 177);
+    border: 1px solid rgb(15, 91, 126);
   }
 
   &:active {
-    opacity: 0.5;
-    color: #fff;
+    opacity: 0.7;
   }
 }

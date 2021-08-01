@@ -6,6 +6,7 @@
   }
 
   &__title {
+    text-transform: uppercase;
     margin: 0 0 80px 0;
 
     @include maxw($md) {

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+ 
+  <header class="header">
+      
+    <div class="header__top">
+      <div class="container">
+        <div class="header__inner">
+
+          <a class="header__logo logo" href="index.html">
+            <img class="logo__img" src="images/logo.png" alt="logo">
+          </a>
+
+          <nav class="menu">
+            <div class="header__burger">
+              <span></span>
+            </div>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link animation-link " href="index.html">Главная</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link animation-link " href="tours.html">Наши услуги</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link animation-link " href="#tours">О компании</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link animation-link " href="contacts.html">Контакты</a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link animation-link " href="index.html#reviews">Отзывы</a>
+              </li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+ 
+    <div class="header__content" style="background-image: url('images/header-bg3.jpg');">
+      <div class="header__content-inner">
+
+        <h1 class="header__title">
+          MyMoscow
+          <span>агенство интересных маршрутов</span>
+        </h1>
+      </div>
+    </div>
+     
+  </header>
+
+  <main class="main">
+    <section class="contacts">
+      <div class="container">
+        <h2 class="contacts__title title">Контакты</h2>
+        <div class="contacts__text wow animate__animated animate__fadeIn">
+          <p class="wow animate__animated animate__fadeIn" data-wow-delay=".1s">
+            Мы - команда тех, кто любит историю и любит Москву.
+          </p>
+          <p class="wow animate__animated animate__fadeIn" data-wow-delay=".2s">
+            Москва – это не только место по «заколачиванию денег» и «взращиванию карьеры», а еще и бесконечно красивые памятники природы, заказники, парки, заповедники. Активный отдых в Москве и Подмосковье – это отличная возможность вырваться из душного мегаполиса куда-нибудь в «дебри», навстречу приключениям. К счастью, не все Подмосковье еще «облагорожено» асфальтными дорожками и высоченными коттеджными заборами. Еще встречаются места, настолько глухие и далекие, что, очутившись там, кажется, что ты – первый человек, ступивший на эту землю.
+          </p>
+          <P class="wow animate__animated animate__fadeIn" data-wow-delay=".3s">
+            Там, где не проедет автомобилист и даже велосипедист, найдет лазейку и откроет для себя все красоты 100% бездорожья турист, проводящий свой активный отдых в Подмосковье.
+          </P>
+        </div>
+        <div class="contcats__cards cards">
+          <div class="cards__item wow animate__animated animate__fadeInLeft" data-wow-offset="50">
+            <div class="cards__image">
+              <img  class="cards__img" src="images/contacts/1.jpg" alt="Александр Рыбаков">
+            </div>
+            <div class="cards__content">
+              <h3 class="cards__name">Александр Рыбаков</h3>
+              <span class="cards__position">директор</span>
+              <a href="mailto:rybakov@mymoscow.ru" class="cards__email" name="email">rybakov@mymoscow.ru</a>
+            </div>
+          </div>
+
+          <div class="cards__item wow animate__animated animate__fadeInRight" data-wow-offset="50">
+            <div class="cards__image">
+              <img  class="cards__img" src="images/contacts/2.jpg" alt="Александр Рыбаков">
+            </div>
+            <div class="cards__content">
+              <h3 class="cards__name">Елена Белкина</h3>
+              <span class="cards__position">руководитель корпоративного отдела</span>
+              <a href="mailto:belkina@mymoscow.ru" class="cards__email" name="email">belkina@mymoscow.ru</a>
+            </div>
+          </div>
+        </div>
+ 
+        <div class="contacts__connect">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <a class="contacts__link animation-link contacts__link--map" href="#">
+                <span>Москва,</span> 
+                <span>Большая Спасская 12</span> 
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link animation-link contacts__link--mail" href="#">
+                <span>E-mail:</span> 
+                <span>info@mymoscow.ru</span> 
+              </a>
+            </li>
+            <li class="contacts__item">
+              <a class="contacts__link animation-link contacts__link--tel" href="#">
+                <span>Телефон: </span> 
+                <span>8 (495) 626-46-00</span> 
+              </a>
+            </li>
+          </ul>
+
+          <div class="contacts__form">
+            <h3 class="contacts__box-title">Напишите нам</h3>
+            <form class="form" action="#">
+              <label class="form__label">
+                <input class="form__input" type="text" name="name" placeholder="ФИО" required>
+              </label>
+              <label class="form__label">
+                <input class="form__input" type="email" name="email" placeholder="E-mail" required>
+              </label>
+              <label class="form__label">
+                <textarea class="form__textarea form__input" name="message" placeholder="Ваше сообщение"></textarea>
+              </label>
+
+              <button class="form__btn" type="submit">Отправить</button>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.9877213907776!2d37.64559751608934!3d55.77608509766331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a7a220c9e5f%3A0x262ed08bf1f58a9c!2z0JHQvtC70YzRiNCw0Y8g0KHQv9Cw0YHRgdC60LDRjyDRg9C7LiwgMTIsINCc0L7RgdC60LLQsCwgMTI5MDkw!5e0!3m2!1sru!2sru!4v1627822171731!5m2!1sru!2sru" width="100%" height="570" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+  </main>
+ 
+  <footer class="footer" id="contacts">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer__inner">
+
+          <div class="footer__item footer__item--welcome">
+            <a class="footer__logo logo" href="#">
+              <img class="logo__img" src="images/logo.png" alt="logo">
+            </a>
+            <div class="footer__text">
+              <p>
+                Мы приглашаем тебя на самые разные
+                экскурсии по Москве. Автобусные и
+                пешеходные, на целый день или на
+                несколько часов, на свежем воздухе или с
+                заходом в здания - у нас в ассортименте
+                более 20 авторских экскурсий по Москве,
+                выбирай и узнавай Москву вместе с нами!
+              </p>
+            </div>
+          </div>
+
+          <div class="footer__item footer__item--contacts">
+            <h3 class="footer__title">Контакты</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a class="footer__list-link animation-link footer__list-link--map" href="#">
+                  Москва, Большая Спасская 12
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link animation-link footer__list-link--mail" href="mailto:moscow@imoscow.ru">
+                  moscow@imoscow.ru
+                </a>
+              </li>
+              <li class="footer__list-item">
+                <a class="footer__list-link animation-link footer__list-link--tel" href="tel:+84956264600">
+                  8 (495) 626-46-00
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="footer__item footer__item--news">
+            <h3 class="footer__title">Последние новости</h3>
+            <div class="footer__text">
+              <p>
+                <a class="footer__link-news" href="#">
+                  Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet varius est, ut varius risus. Integer sed aliquam sem. Suspendisse venenatis viverra ipsum nec consecteturstandard dummy
+                  <span>5 марта 2018</span>
+                </a>
+              </p>
+              <p>
+                <a class="footer__link-news" href="#">
+                  Curabitur felis nibh, lacinia non rhoncus vel, lobortis et lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse sit amet varius est, ut varius risus. Integer sed aliquam sem. Suspendisse venenatis viverra ipsum nec consecteturstandard dummy
+                <span>12 декабря 2017</span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+       
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom__inner">
+          <div class="footer-bottom__designed">
+            <p>
+              Designed by Nordic IT School
+            </p>
+          </div>
+          <div class="footer-bottom__copy">
+            <p>
+              © 2018 Copyright. Все права защищены
+            </p>
+          </div>
+          <ul class="footer-bottom__list">
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
+                <img src="images/footer-socials/vk.png" alt="">
+              </a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
+                <img src="images/footer-socials/facebook.png" alt="">
+              </a>
+            </li>
+            <li class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">
+                <img src="images/footer-socials/instagram.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+ 
+  <script src="js/main.min.js"></script>
+</body>
+</html>
