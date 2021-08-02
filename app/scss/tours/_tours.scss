@@ -161,7 +161,7 @@
 .popup {
   position: fixed;
   width: 40%;
-  height: 400px;
+  height: 370px;
   background-color: rgba(#273943, 0.8);
   left: 50%;
   margin-left: -20%;
@@ -171,12 +171,30 @@
   display: none;
   margin-top: -200px;
   z-index: 7;
-  padding: 25px;
+  padding: 25px 10px;
+
+  @include maxw($md) {
+    width: 260px;
+  }
+
+  @include maxw($xs) {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+  
  
   &__close {
-    font-size: 20px;
+    font-size: 40px;
+    width: 40px;
     position: absolute;
+    top: 10px;
     right: 10px;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #FFC155;
+    }
   }
 
   &__form {
@@ -187,8 +205,14 @@
   }
 
   &__text {
-    font-size: 18px;
-    margin: 0 0 50px 0;
+    font-size:22px;
+    margin: 0 0 30px 0;
+    padding: 40px 0 0 0;
+
+    @include maxw($md) {
+      font-size: 16px;
+      margin: 0 0 30px 0;
+    }
   }
  
   &__label {
@@ -206,9 +230,14 @@
   }
 
   &__btn {
-    padding: 7px 10px;
+    padding: 8px 10px;
     font-size: 18px;
-    border: 3px solid #FFC155;
+    border: 2px solid #FFC155;
     outline: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color:#ceb07d;
+    }
   }
 } 
