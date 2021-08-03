@@ -62,7 +62,6 @@
   &__image {
     flex: 0 1 50%;
     position: relative;
-    // height: 622px;
 
     @include maxw($lg) {
       flex: 0 1 300px;
@@ -127,7 +126,6 @@
 
     p {
       margin-bottom: 25px;
-      // @include line-climp(8);
 
       @include maxw($md) {
         margin-bottom: 15px;
@@ -144,8 +142,6 @@
   &__link {
     display: inline-block;
     padding: 13px 9px;
-    font-size: 16px;
-    font-weight: 400;
     background-color: #e79f21;
     border: 1px solid #FFA300;
     border-radius: 5px;
@@ -198,10 +194,8 @@
   }
 
   &__form {
-    display: flex;
+    @include flexc();
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 
   &__text {
@@ -235,6 +229,7 @@
     border: 2px solid #FFC155;
     outline: none;
     transition: background-color 0.3s;
+    background-color:#fff;
 
     &:hover {
       background-color:#ceb07d;

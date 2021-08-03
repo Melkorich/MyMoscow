@@ -201,7 +201,6 @@
   &__position {
     display: block;
     font-size: 18px;
-    font-weight: 400;
     margin: 0 0 15px 0;
     max-width: 150px;
   }
@@ -243,7 +242,7 @@
 
   &__textarea {
     resize: none;
-    min-height: 168px;
+    min-height: 170px;
 
     &::placeholder{
       position: relative;
