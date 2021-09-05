@@ -17,11 +17,16 @@ $(function(){
       }, 500);
   });
  
-
+ 
   $('.header__burger, menu').on('click', function() {
     $('.menu__list').toggleClass('menu__list--active');
     $('.header__burger').toggleClass('header__burger--active');
     $('body').toggleClass('lock');
+  });
+
+  $('.menu__link').on('click', function() {
+    $('.menu__list').removeClass('menu__list--active');
+    $('body').removeClass('lock');
   });
 
   
